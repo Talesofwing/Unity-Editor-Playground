@@ -18,7 +18,7 @@ Inherit from `ScriptableWizard` like the code above👆. It consists of four par
 
 ![ScriptableWizard](/Images/001.png)
 
-and five functions.
+five functions,
 
 ```csharp
 [MenuItem ("zer0/ScriptableWizard/MyWizard")]
@@ -39,4 +39,13 @@ private void OnWizardOtherButton () {}
 // It will be called once when the wizard open.
 // It will be called when propeties are changed.
 private void OnWizardUpdate () {}
+```
+
+and two properties.
+
+```csharp
+private void Awake () {
+    helpString = "Generate entity";
+    isValid = true;
+}
 ```

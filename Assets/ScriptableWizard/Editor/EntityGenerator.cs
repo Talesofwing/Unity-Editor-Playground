@@ -17,7 +17,7 @@ namespace zer0.Editor {
 		/// It will be called when the window open
 		/// </summary>
 		private void Awake () {
-			Debug.Log ("Awake");
+			Debug.Log ("Entity Generator awake");
 
 			_name = DefaultName;
 			_hp = DefaultHp;
@@ -40,7 +40,7 @@ namespace zer0.Editor {
 			Entity entity = go.AddComponent<Entity> ();
 			entity.Init (_name, _hp, _atk);
 
-			Debug.Log ($"{_name} created!");
+			Debug.Log ($"{_name} is created");
 		}
 
 		/// <summary>
@@ -58,7 +58,16 @@ namespace zer0.Editor {
 		/// On wizard update
 		/// </summary>
 		private void OnWizardUpdate () {
-			// do something
+			if (_name == "") {
+				helpString = "Please input the name";
+				isValid = false;
+			} else {
+				helpString = "Generate eneity";
+				isValid = true;
+			}
+
+			_hp = Mathf.Max (0, _hp);
+			_atk = Mathf.Max (0, _atk);
 		}
 
 	}

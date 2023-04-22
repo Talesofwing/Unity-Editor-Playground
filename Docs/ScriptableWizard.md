@@ -21,22 +21,22 @@ Inherit from `ScriptableWizard` like the code above👆. It consists of four par
 and five functions.
 
 ```csharp
-    [MenuItem ("zer0/ScriptableWizard/MyWizard")]
-    private static void CreateWizard () {
-        DisplayWizard<MyWizard> ("Title", "Create Button", "Other Button");
-    }
+[MenuItem ("zer0/ScriptableWizard/MyWizard")]
+private static void CreateWizard () {
+    DisplayWizard<MyWizard> ("Title", "Create Button", "Other Button");
+}
 
-    // It will be called when the wizard open.
-    // Note: Wizard only have the Awake() function and don't have Start() function or any others.
-    private void Awake () {}
+// It will be called when the wizard open.
+// Note: Wizard only have the Awake() function and don't have Start() function or any others.
+private void Awake () {}
 
-    // On create button click.
-    private void OnWizardCreate () {}
+// On create button click.
+private void OnWizardCreate () {}
 
-    // On other button click.
-    private void OnWizardOtherButton () {}
+// On other button click.
+private void OnWizardOtherButton () {}
 
-    // It will be called once when the wizard open.
-    // It will be called when propeties are changed.
-    private void OnWizardUpdate () {}
+// It will be called once when the wizard open.
+// It will be called when propeties are changed.
+private void OnWizardUpdate () {}
 ```

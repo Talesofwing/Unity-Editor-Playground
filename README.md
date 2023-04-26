@@ -4,7 +4,7 @@
 
 This project is a playground for Unity Editor, providing various examples.
 
-## Table of Contents
+## Contents
 - [ScriptableWizard](Docs/ScriptableWizard.md)
 
 ## News

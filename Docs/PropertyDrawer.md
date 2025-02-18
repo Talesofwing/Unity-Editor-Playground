@@ -1,15 +1,5 @@
 # PropertyDrawer
 
-## Prerequisites
-If you already possess the following skills, reading this project will be easier.
-- C# Attribute
-- C# Reflection
-
-## Example functions
-- **[New]** Automatically call the `Set()` function after the variable is updated
-
-## Changes in the GUI
-
 ```c#
 public override void OnGUI (Rect position, SerializedProperty property, GUIContent label) {
     // Only the GUI between BeginChangeCheck() and EndChangeCheck() will be checked for changes.
